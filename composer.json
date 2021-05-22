@@ -21,17 +21,24 @@
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "repositories": [
+      {
+        "name": "prooph/service-bus",
+        "type": "github",
+        "url": "https://github.com/joemugen/service-bus"
+      }
+    ],
     "require": {
-        "php": "^7.1",
+        "php": "^7.1|^8.0",
         "prooph/common" : "^4.2.1",
-        "prooph/service-bus" : "^6.2",
+        "prooph/service-bus" : "dev-feature/php8",
         "prooph/event-store" : "^7.3.1"
     },
     "require-dev": {
         "psr/container": "^1.0",
-        "phpunit/phpunit": "^6.0",
+        "phpunit/phpunit": "^9.5",
         "phpspec/prophecy": "^1.7",
-        "prooph/php-cs-fixer-config": "^0.3",
+        "prooph/php-cs-fixer-config": "^0.4",
         "satooshi/php-coveralls": "^1.0",
         "prooph/bookdown-template": "^0.2.3"
     },
